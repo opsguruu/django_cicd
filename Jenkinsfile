@@ -23,7 +23,7 @@ pipeline {
                 sh 'sudo docker-compose up -d'
             }
         }  
-        stage('Deploy') {
+        stage('Deploy main') {
             when {
                 branch 'main'
             }
